@@ -1,19 +1,19 @@
 package org.example;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class LoopStudy {
     public static void main(String[] args) {
         var data = "abbcccaaabccccc";
-        var result = new StringBuilder();
-        char prev = 0;  // 文字コードとして存在しない
 
-        for (char ch : data.toCharArray()) {
-            if (ch == prev) continue;
-            prev = ch;
-            result.append(ch);
-        }
+        var result = Arrays.stream(data.split(""))
+                .distinct()
+                .collect(Collectors.joining());
 
         System.out.println(data);
         System.out.println(result);
-
     }
 }

@@ -9,10 +9,12 @@ public class MovingAverage {
         IntStream.Builder result = IntStream.builder();
 
         for (int i = 0; i < data.length - 2; i++) {
-            int sum = IntStream.of(data)
+
+            int sum = Arrays.stream(data)
                     .skip(i)
                     .limit(3)
                     .sum();
+
             result.add(sum / 3);
         }
 

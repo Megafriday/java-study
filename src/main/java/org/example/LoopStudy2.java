@@ -11,7 +11,7 @@ public class LoopStudy2 {
                 .distinct()
                 .collect(Collectors.joining());
 
-        System.out.println(result);
+        System.out.println(result);  // abc
         System.out.println("------------------------------------------------------------");
 
         var result2 = new StringBuilder();
@@ -22,7 +22,7 @@ public class LoopStudy2 {
             result2.append(data.charAt(i));
         }
 
-        System.out.println(result2);
+        System.out.println(result2);    // abcabc
         System.out.println("------------------------------------------------------------");
 
         var result3 = new StringBuilder();
@@ -34,7 +34,7 @@ public class LoopStudy2 {
             result3.append(s);
         }
 
-        System.out.println(result3);
+        System.out.println(result3);    // abcabc
         System.out.println("------------------------------------------------------------");
     }
 }
