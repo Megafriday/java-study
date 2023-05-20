@@ -1,9 +1,7 @@
 package org.example;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class LoopStudy {
     public static void main(String[] args) {
@@ -15,5 +13,6 @@ public class LoopStudy {
 
         System.out.println(data);
         System.out.println(result);
+
     }
 }
